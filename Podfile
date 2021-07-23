@@ -14,4 +14,6 @@ target 'JJGram_RESTful' do
   pod 'RxGesture'
 
   pod 'Alamofire'
+
+  pod 'SDWebImage', '~> 5.0'
 end

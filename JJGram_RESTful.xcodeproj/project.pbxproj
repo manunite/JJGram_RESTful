@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4982799712453E84376C4768 /* Pods_JJGram_RESTful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AE10F34D8597186792F3D7 /* Pods_JJGram_RESTful.framework */; };
 		F5C1F52026A95C8A00F7CD8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C1F51F26A95C8A00F7CD8B /* AppDelegate.swift */; };
-		F5C1F52226A95C8A00F7CD8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C1F52126A95C8A00F7CD8B /* SceneDelegate.swift */; };
 		F5C1F52426A95C8A00F7CD8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C1F52326A95C8A00F7CD8B /* ViewController.swift */; };
 		F5C1F52726A95C8A00F7CD8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C1F52526A95C8A00F7CD8B /* Main.storyboard */; };
 		F5C1F52926A95C8A00F7CD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C1F52826A95C8A00F7CD8B /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 		CCB67145ABAE9D880AB27BEE /* Pods-JJGram_RESTful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJGram_RESTful.debug.xcconfig"; path = "Target Support Files/Pods-JJGram_RESTful/Pods-JJGram_RESTful.debug.xcconfig"; sourceTree = "<group>"; };
 		F5C1F51C26A95C8A00F7CD8B /* JJGram_RESTful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJGram_RESTful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C1F51F26A95C8A00F7CD8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5C1F52126A95C8A00F7CD8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F5C1F52326A95C8A00F7CD8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5C1F52626A95C8A00F7CD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5C1F52826A95C8A00F7CD8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				CCB67145ABAE9D880AB27BEE /* Pods-JJGram_RESTful.debug.xcconfig */,
 				10E1A021FD48702B4D918391 /* Pods-JJGram_RESTful.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -125,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				F5C1F51F26A95C8A00F7CD8B /* AppDelegate.swift */,
-				F5C1F52126A95C8A00F7CD8B /* SceneDelegate.swift */,
 				F5C1F52326A95C8A00F7CD8B /* ViewController.swift */,
 				F5C1F52526A95C8A00F7CD8B /* Main.storyboard */,
 				F5C1F52826A95C8A00F7CD8B /* Assets.xcassets */,
@@ -329,7 +325,6 @@
 			files = (
 				F5C1F52426A95C8A00F7CD8B /* ViewController.swift in Sources */,
 				F5C1F52026A95C8A00F7CD8B /* AppDelegate.swift in Sources */,
-				F5C1F52226A95C8A00F7CD8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
