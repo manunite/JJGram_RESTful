@@ -11,8 +11,10 @@ import SnapKit
 import SDWebImage
 
 
-
 class ViewController: UIViewController {
+  
+  static var imageArr: [UIImage] = []
+  
   struct Item: Codable {
     let FilterName: String
     let OriginName: String
@@ -40,8 +42,13 @@ class ViewController: UIViewController {
     imageView.layer.borderWidth = 1.0
     imageView.layer.borderColor = UIColor.cyan.cgColor
     
-    let url = URL.init(string: "http://192.168.0.22:3000/image")
-    imageView.sd_setImage(with: url, completed: nil)
+//    let url = URL.init(string: "http://192.168.0.22:3000/image")
+//    imageView.sd_setImage(with: url, completed: nil)
+    
+     
+//    let url = URL.init(string: "http://192.168.0.22:3000/getLUTImage/CINE/CINE01.png")
+//    imageView.sd_setImage(with: url, completed: nil)
+    
     
 //    let ddurl = URL.init(string: "http://192.168.0.22:3000/getMainImageURL")
 //    AF.request(ddurl!).responseJSON { (response) in
@@ -60,11 +67,22 @@ class ViewController: UIViewController {
         do {
           let dataJSON = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
           let parsedData = try JSONDecoder().decode([Item].self, from: dataJSON)
+          
           // Data화된 정보(dataJSON)을 JSONDecoder를 통해 원하는 정보를 일괄적으로 파싱해올수있다.
           // 반드시 파싱해오려는 구조체는 Codable 혹은 Decodable을 상속받아서 구현해야함.
           // JSON의 Key값과 Struct의 변수네임이 동일해야한다.
           // 물론 자료형도 동일해야한다.
-          NSLog("JKJKAAA")
+          
+          DispatchQueue.global().async {
+            let imageURL = URL.init(string: "http://192.168.0.22:3000/getLUTImage/CINE/CINE01.png")
+            let data = try? Data(contentsOf: imageURL!)
+            let image: UIImage = UIImage(data: data!)!
+            DispatchQueue.main.async {
+              
+              self.imageView.image = image
+            }
+            NSLog("JKJKAAA")
+          }
         } catch {
           NSLog("\(error)")
           // print Error
